@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Materiały dydaktyczne: jądro komórkowe — budowa, składniki i funkcje.">
+<title>Jądro komórkowe — budowa i funkcje</title>
+<style>
+:root{--ink:#17243a;--muted:#52627a;--paper:#f5f7fb;--card:#fff;--line:#dce4ef;--blue:#2457a7;--teal:#087f8c;--pale:#eaf2ff;--gold:#f4c95d;--good:#176b48;--bad:#a22b37}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--blue)}.wrap{max-width:1120px;margin:auto;padding:0 22px}.hero{background:linear-gradient(130deg,#122747,#2457a7 65%,#087f8c);color:white;padding:56px 0 42px;overflow:hidden}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:750;color:#bfe9f0}.hero h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.08;margin:.35em 0 .25em;max-width:780px}.hero p{font-size:1.1rem;max-width:760px;color:#e4edfb}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid #ffffff60;border-radius:999px;padding:5px 12px;font-size:.88rem}
+nav{background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}nav .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px}nav a{text-decoration:none;white-space:nowrap;padding:7px 10px;border-radius:9px;font-size:.9rem;font-weight:650}nav a:hover{background:var(--pale)}
+main{padding:28px 0 56px}.intro{font-size:1.08rem;color:#35445a;max-width:900px}.section{margin-top:34px;scroll-margin-top:76px}.section h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2;margin:0 0 15px}.section h3{margin:0 0 8px;font-size:1.12rem}.section p{margin:.45em 0 1em}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:20px;box-shadow:0 5px 18px #20385808}.card p:last-child{margin-bottom:0}.tag{display:inline-block;font-size:.78rem;font-weight:750;letter-spacing:.03em;color:var(--blue);background:var(--pale);border-radius:6px;padding:3px 8px;margin-bottom:8px}.callout{border-left:4px solid var(--teal);background:#eaf8f8;padding:14px 17px;border-radius:0 12px 12px 0;margin:18px 0}.warn{border-left-color:#d99a19;background:#fff8e6}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:13px;background:white}table{width:100%;border-collapse:collapse;min-width:600px}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#edf3fb;font-size:.9rem}tr:last-child td{border-bottom:0}
+.diagram{background:white;border:1px solid var(--line);border-radius:18px;padding:14px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(240px,.9fr);gap:18px;align-items:center}.diagram svg{width:100%;height:auto;display:block}.key{display:grid;gap:10px}.key-item{display:flex;gap:10px;align-items:flex-start}.swatch{width:15px;height:15px;border-radius:4px;flex:0 0 15px;margin-top:5px}.key-item strong{display:block}.key-item small{color:var(--muted)}
+ul,ol{padding-left:1.25rem}li{margin:.35em 0}.steps{counter-reset:step;display:grid;gap:12px}.step{display:grid;grid-template-columns:42px 1fr;gap:12px;background:white;border:1px solid var(--line);border-radius:13px;padding:15px}.num{width:38px;height:38px;border-radius:12px;background:var(--pale);color:var(--blue);display:grid;place-items:center;font-weight:800}
+.quiz{background:#fff;border:1px solid var(--line);border-radius:17px;padding:22px}.question{padding:16px 0;border-bottom:1px solid var(--line)}.question:last-of-type{border-bottom:0}.question p{font-weight:700;margin:0 0 9px}.question label{display:block;padding:5px 0;cursor:pointer}.quiz button{background:var(--blue);color:white;border:0;border-radius:10px;padding:11px 17px;font:inherit;font-weight:750;cursor:pointer;margin-top:12px}.quiz button:hover{filter:brightness(1.1)}#result{font-weight:750;margin-top:14px}.correct{color:var(--good)}.incorrect{color:var(--bad)}details{background:white;border:1px solid var(--line);border-radius:12px;padding:13px 16px;margin:10px 0}summary{font-weight:700;cursor:pointer}footer{background:#122747;color:#dce7f8;padding:25px 0;font-size:.9rem}footer p{margin:.3em 0}.small{font-size:.9rem;color:var(--muted)}.toplink{float:right;text-decoration:none;font-size:.9rem}
+@media(max-width:720px){.grid{grid-template-columns:1fr}.diagram{grid-template-columns:1fr}.hero{padding-top:38px}.wrap{padding-left:16px;padding-right:16px}.card{padding:17px}}
+@media print{nav,.quiz button,.toplink{display:none}.hero{background:#fff;color:#111;padding:20px 0}.hero p,.eyebrow{color:#333}.card,.diagram,.table-wrap{box-shadow:none;break-inside:avoid}body{background:white}.section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+ <div class="wrap">
+  <div class="eyebrow">Materiały dydaktyczne · Biologia komórki</div>
+  <h1>Jądro komórkowe — budowa i funkcje</h1>
+  <p>Przewodnik po strukturze, która przechowuje większość informacji genetycznej komórki eukariotycznej i uczestniczy w kontrolowaniu jej aktywności.</p>
+  <div class="chips"><span class="chip">Budowa</span><span class="chip">DNA i chromatyna</span><span class="chip">Ekspresja genów</span><span class="chip">Sprawdź wiedzę</span></div>
+ </div>
+</header>
+<nav aria-label="Nawigacja po materiale"><div class="wrap">
+ <a href="#cele">Cele</a><a href="#budowa">Budowa</a><a href="#skladniki">Składniki</a><a href="#funkcje">Funkcje</a><a href="#cykl">Cykl komórkowy</a><a href="#porownanie">Porównanie</a><a href="#quiz">Quiz</a>
+</div></nav>
+<main class="wrap">
+ <p class="intro">Jądro komórkowe (nucleus) jest otoczoną podwójną błoną strukturą typową dla większości komórek eukariotycznych. Zawiera DNA związane z białkami, a jego organizacja umożliwia przechowywanie, odczytywanie i przekazywanie informacji genetycznej.</p>
+
+ <section class="section" id="cele">
+  <h2>Cele nauczania</h2>
+  <div class="grid">
+   <article class="card"><span class="tag">Po tej lekcji</span><h3>Powinieneś/powinnaś umieć</h3><ul><li>wskazać główne elementy budowy jądra;</li><li>wyjaśnić rolę otoczki jądrowej i porów jądrowych;</li><li>odróżnić chromatynę, chromosom i jąderko;</li><li>powiązać budowę jądra z jego funkcjami.</li></ul></article>
+   <article class="card"><span class="tag">Pojęcia kluczowe</span><h3>Zapamiętaj</h3><p><strong>Otoczka jądrowa, por jądrowy, nukleoplazma, chromatyna, nukleosom, jąderko, transkrypcja, replikacja.</strong></p><p class="small">W komórkach eukariotycznych większość DNA znajduje się w jądrze; niewielka ilość DNA występuje również w mitochondriach, a u roślin i glonów także w plastydach.</p></article>
+  </div>
+ </section>
+
+ <section class="section" id="budowa">
+  <h2>1. Budowa jądra komórkowego</h2>
+  <div class="diagram">
+   <svg viewBox="0 0 520 390" role="img" aria-labelledby="svgtitle svgdesc">
+    <title id="svgtitle">Schemat jądra komórkowego</title><desc id="svgdesc">Schematyczne jądro z podwójną otoczką, porami, chromatyną, jąderkiem i nukleoplazmą.</desc>
+    <defs><linearGradient id="nuc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d9e8ff"/><stop offset="1" stop-color="#b8d1f6"/></linearGradient></defs>
+    <ellipse cx="248" cy="194" rx="190" ry="151" fill="#9bb6dc" opacity=".45"/>
+    <ellipse cx="248" cy="194" rx="182" ry="143" fill="none" stroke="#2457a7" stroke-width="8"/>
+    <ellipse cx="248" cy="194" rx="170" ry="131" fill="url(#nuc)" stroke="#6d91c7" stroke-width="3"/>
+    <g fill="#fff" stroke="#2457a7" stroke-width="2">
+     <ellipse cx="128" cy="86" rx="9" ry="5"/><ellipse cx="292" cy="61" rx="9" ry="5"/><ellipse cx="409" cy="144" rx="9" ry="5"/><ellipse cx="395" cy="270" rx="9" ry="5"/><ellipse cx="244" cy="324" rx="9" ry="5"/><ellipse cx="79" cy="223" rx="9" ry="5"/>
+    </g>
+    <g fill="none" stroke="#45689c" stroke-width="4" stroke-linecap="round">
+     <path d="M120 139 Q143 120 163 144 T207 142 T250 149 T292 136 T341 145"/>
+     <path d="M116 166 Q141 185 166 164 T214 177 T258 163 T303 177 T353 163"/>
+     <path d="M126 218 Q147 197 169 220 T215 218 T261 230 T305 211 T348 225"/>
+     <path d="M140 251 Q162 270 187 249 T234 256 T278 248 T326 260"/>
+     <path d="M177 111 Q194 130 215 110 T259 117 T300 109"/>
+    </g>
+    <ellipse cx="273" cy="196" rx="47" ry="39" fill="#087f8c" stroke="#075d69" stroke-width="3"/>
+    <ellipse cx="273" cy="196" rx="25" ry="20" fill="#42a8a7" opacity=".85"/>
+    <g font-family="system-ui,sans-serif" font-size="13" fill="#17243a" stroke="#17243a" stroke-width="1.2">
+     <path d="M65 35 L95 66 L116 75" fill="none"/><rect x="8" y="10" width="118" height="26" rx="6" fill="#fff" stroke="#dce4ef"/><text x="16" y="28" stroke="none">Otoczka jądrowa</text>
+     <path d="M423 74 L386 100 L370 117" fill="none"/><rect x="363" y="43" width="140" height="26" rx="6" fill="#fff" stroke="#dce4ef"/><text x="371" y="61" stroke="none">Por jądrowy</text>
+     <path d="M404 319 L365 290 L333 255" fill="none"/><rect x="365" y="320" width="133" height="26" rx="6" fill="#fff" stroke="#dce4ef"/><text x="373" y="338" stroke="none">Chromatyna</text>
+     <path d="M247 245 L260 229" fill="none"/><rect x="196" y="246" width="95" height="26" rx="6" fill="#fff" stroke="#dce4ef"/><text x="204" y="264" stroke="none">Jąderko</text>
+    </g>
+   </svg>
+   <div class="key">
+    <div class="key-item"><span class="swatch" style="background:#2457a7"></span><div><strong>Otoczka jądrowa</strong><small>Dwie błony oddzielające nukleoplazmę od cytoplazmy.</small></div></div>
+    <div class="key-item"><span class="swatch" style="background:#fff;border:2px solid #2457a7"></span><div><strong>Pory jądrowe</strong><small>Kontrolowane drogi transportu cząsteczek między jądrem a cytoplazmą.</small></div></div>
+    <div class="key-item"><span class="swatch" style="background:#45689c"></span><div><strong>Chromatyna</strong><small>DNA związane m.in. z histonami i innymi białkami.</small></div></div>
+    <div class="key-item"><span class="swatch" style="background:#087f8c"></span><div><strong>Jąderko</strong><small>Miejsce syntezy rRNA i składania podjednostek rybosomów.</small></div></div>
+    <p class="small">Schemat poglądowy — elementy nie są przedstawione w skali.</p>
+   </div>
+  </div>
+ </section>
+
+ <section class="section" id="skladniki">
+  <h2>2. Najważniejsze składniki i ich rola</h2>
+  <div class="table-wrap"><table>
+   <thead><tr><th>Element</th><th>Budowa / charakterystyka</th><th>Funkcja</th></tr></thead>
+   <tbody>
+    <tr><td><strong>Otoczka jądrowa</strong></td><td>Dwie błony; przestrzeń międzybłonowa łączy się z wnętrzem siateczki śródplazmatycznej.</td><td>Oddziela materiał genetyczny od cytoplazmy i pomaga utrzymać odrębne środowisko jądra.</td></tr>
+    <tr><td><strong>Kompleksy porów jądrowych</strong></td><td>Duże kompleksy białkowe w miejscach połączenia obu błon.</td><td>Umożliwiają selektywny transport, m.in. białek do jądra oraz RNA i podjednostek rybosomów na zewnątrz.</td></tr>
+    <tr><td><strong>Blaszka jądrowa</strong></td><td>Sieć białek laminowych po wewnętrznej stronie otoczki u większości zwierząt.</td><td>Wspiera kształt jądra i uczestniczy w organizacji chromatyny.</td></tr>
+    <tr><td><strong>Nukleoplazma</strong></td><td>Wodny roztwór z jonami, nukleotydami, białkami i innymi cząsteczkami.</td><td>Stanowi środowisko reakcji i procesów zachodzących w jądrze.</td></tr>
+    <tr><td><strong>Chromatyna</strong></td><td>DNA związane z histonami i białkami niehistonowymi.</td><td>Upakowuje DNA, reguluje dostęp do genów i umożliwia prawidłowe przekazywanie informacji genetycznej.</td></tr>
+    <tr><td><strong>Jąderko</strong></td><td>Nie jest otoczone błoną; obszar o dużym zagęszczeniu RNA i białek.</td><td>Synteza i dojrzewanie rRNA oraz wstępne składanie podjednostek rybosomów.</td></tr>
+   </tbody>
+  </table></div>
+  <div class="callout"><strong>Ważne:</strong> jąderko nie jest osobnym organellum otoczonym błoną. Powstaje wokół obszarów chromosomów zawierających geny rRNA.</div>
+ </section>
+
+ <section class="section" id="funkcje">
+  <h2>3. Główne funkcje jądra</h2>
+  <div class="grid">
+   <article class="card"><span class="tag">Informacja genetyczna</span><h3>Przechowywanie DNA</h3><p>Jądro zawiera większość genomu komórki eukariotycznej. Sekwencje DNA obejmują geny oraz odcinki pełniące funkcje regulacyjne i strukturalne.</p></article>
+   <article class="card"><span class="tag">Odczytywanie informacji</span><h3>Transkrypcja</h3><p>Na matrycy DNA powstaje RNA. W jądrze syntetyzowane są m.in. pre-mRNA, rRNA i różne rodzaje niekodujących RNA. W komórkach eukariotycznych wiele transkryptów podlega obróbce przed eksportem.</p></article>
+   <article class="card"><span class="tag">Przed podziałem</span><h3>Replikacja DNA</h3><p>Przed podziałem komórki DNA jest kopiowane, aby komórki potomne mogły otrzymać komplet informacji genetycznej. Replikacja zachodzi w fazie S cyklu komórkowego.</p></article>
+   <article class="card"><span class="tag">Regulacja</span><h3>Kontrola ekspresji genów</h3><p>Stopień upakowania chromatyny, czynniki transkrypcyjne i modyfikacje epigenetyczne wpływają na to, które geny są aktywne i z jaką intensywnością.</p></article>
+   <article class="card"><span class="tag">Rybosomy</span><h3>Produkcja podjednostek rybosomów</h3><p>W jąderku powstaje większość rRNA i rozpoczyna się składanie podjednostek rybosomów, które następnie są transportowane do cytoplazmy.</p></article>
+   <article class="card"><span class="tag">Organizacja</span><h3>Porządkowanie procesów</h3><p>Przestrzenna organizacja chromatyny oraz obecność kompleksów białkowych pomagają koordynować replikację, naprawę DNA i ekspresję genów.</p></article>
+  </div>
+  <div class="callout warn"><strong>Nie myl procesów:</strong> u typowej komórki eukariotycznej transkrypcja zachodzi w jądrze, natomiast translacja — synteza białka na podstawie mRNA — zachodzi na rybosomach w cytoplazmie lub związanych z szorstką siateczką śródplazmatyczną.</div>
+ </section>
+
+ <section class="section" id="chromatyna">
+  <h2>4. Chromatyna, nukleosomy i chromosomy</h2>
+  <div class="steps">
+   <div class="step"><div class="num">1</div><div><h3>DNA</h3><p>Dwuniciowa cząsteczka niosąca informację genetyczną.</p></div></div>
+   <div class="step"><div class="num">2</div><div><h3>Nukleosom</h3><p>Podstawowa jednostka organizacji chromatyny: fragment DNA owinięty wokół kompleksu białek histonowych.</p></div></div>
+   <div class="step"><div class="num">3</div><div><h3>Chromatyna</h3><p>DNA wraz z histonami i innymi białkami. Jej organizacja zmienia się zależnie od aktywności genów i etapu cyklu komórkowego.</p></div></div>
+   <div class="step"><div class="num">4</div><div><h3>Chromosom w czasie podziału</h3><p>Chromatyna ulega silnej kondensacji, co ułatwia rozdział DNA do komórek potomnych. Po replikacji chromosom składa się z dwóch chromatyd siostrzanych połączonych m.in. w rejonie centromeru.</p></div></div>
+  </div>
+  <p><strong>Euchromatyna</strong> jest zwykle mniej skondensowana i częściej dostępna dla aparatu transkrypcyjnego. <strong>Heterochromatyna</strong> jest bardziej skondensowana i na ogół mniej aktywna transkrypcyjnie, choć zależność ta nie jest absolutna.</p>
+ </section>
+
+ <section class="section" id="cykl">
+  <h2>5. Jądro a cykl komórkowy</h2>
+  <div class="table-wrap"><table>
+   <thead><tr><th>Etap</th><th>Co dzieje się z DNA i jądrem?</th></tr></thead>
+   <tbody>
+    <tr><td><strong>G1</strong></td><td>Komórka rośnie i prowadzi aktywność metaboliczną; chromatyna jest obecna w jądrze.</td></tr>
+    <tr><td><strong>S</strong></td><td>Zachodzi replikacja DNA — ilość DNA w komórce zostaje podwojona.</td></tr>
+    <tr><td><strong>G2</strong></td><td>Komórka przygotowuje się do podziału i kontroluje m.in. poprawność replikacji.</td></tr>
+    <tr><td><strong>Mitoza</strong></td><td>Chromosomy kondensują się, a materiał genetyczny zostaje rozdzielony. U wielu komórek otoczka jądrowa rozpada się na początku mitozy i odtwarza pod koniec; przebieg może różnić się między organizmami.</td></tr>
+   </tbody>
+  </table></div>
+ </section>
+
+ <section class="section" id="porownanie">
+  <h2>6. Jądro a nukleoid</h2>
+  <div class="table-wrap"><table>
+   <thead><tr><th>Cecha</th><th>Jądro komórkowe</th><th>Nukleoid</th></tr></thead>
+   <tbody>
+    <tr><td>Występowanie</td><td>Komórki eukariotyczne</td><td>Komórki prokariotyczne, np. bakterie</td></tr>
+    <tr><td>Otoczka błonowa</td><td>Tak, zwykle podwójna</td><td>Nie</td></tr>
+    <tr><td>Materiał genetyczny</td><td>DNA w chromosomach, związane z białkami</td><td>DNA w obszarze cytoplazmy; organizacja różni się od jądrowej</td></tr>
+    <tr><td>Transkrypcja i translacja</td><td>Rozdzielone przestrzennie: transkrypcja w jądrze, translacja w cytoplazmie</td><td>Mogą być sprzężone przestrzennie i czasowo</td></tr>
+   </tbody>
+  </table></div>
+  <p class="small">Dojrzałe erytrocyty ssaków są przykładem komórek, które tracą jądro w trakcie różnicowania. Nie oznacza to jednak, że wszystkie komórki organizmu mają jądro pojedyncze — występują też komórki wielojądrzaste, np. włókna mięśni szkieletowych.</p>
+ </section>
+
+ <section class="section" id="quiz">
+  <h2>7. Sprawdź swoją wiedzę</h2>
+  <div class="quiz">
+   <form id="quizForm">
+    <div class="question"><p>1. Która struktura kontroluje transport między jądrem a cytoplazmą?</p>
+     <label><input type="radio" name="q1" value="a"> Błona mitochondrialna</label>
+     <label><input type="radio" name="q1" value="b"> Kompleks poru jądrowego</label>
+     <label><input type="radio" name="q1" value="c"> Rybosom</label>
+    </div>
+    <div class="question"><p>2. Czym jest chromatyna?</p>
+     <label><input type="radio" name="q2" value="a"> Wyłącznie RNA w jąderku</label>
+     <label><input type="radio" name="q2" value="b"> Błoną otaczającą jądro</label>
+     <label><input type="radio" name="q2" value="c"> DNA związanym z białkami</label>
+    </div>
+    <div class="question"><p>3. Gdzie zachodzi synteza większości rRNA i wstępne składanie podjednostek rybosomów?</p>
+     <label><input type="radio" name="q3" value="a"> W jąderku</label>
+     <label><input type="radio" name="q3" value="b"> W lizosomie</label>
+     <label><input type="radio" name="q3" value="c"> W aparacie Golgiego</label>
+    </div>
+    <div class="question"><p>4. W której fazie cyklu komórkowego zachodzi replikacja DNA?</p>
+     <label><input type="radio" name="q4" value="a"> G1</label>
+     <label><input type="radio" name="q4" value="b"> S</label>
+     <label><input type="radio" name="q4" value="c"> G2</label>
+    </div>
+    <div class="question"><p>5. Które stwierdzenie jest prawidłowe?</p>
+     <label><input type="radio" name="q5" value="a"> Jąderko jest otoczone pojedynczą błoną.</label>
+     <label><input type="radio" name="q5" value="b"> Translacja typowo zachodzi wewnątrz jądra.</label>
+     <label><input type="radio" name="q5" value="c"> Jądro przechowuje większość DNA komórki eukariotycznej.</label>
+    </div>
+    <button type="submit">Sprawdź odpowiedzi</button>
+    <button type="button" id="resetBtn" style="background:#52627a;margin-left:8px">Wyczyść</button>
+    <div id="result" aria-live="polite"></div>
+   </form>
+  </div>
+ </section>
+
+ <section class="section" id="podsumowanie">
+  <h2>Podsumowanie</h2>
+  <div class="card">
+   <ul>
+    <li>Jądro oddziela większość DNA komórki eukariotycznej od cytoplazmy.</li>
+    <li>Otoczka jądrowa ma dwie błony, a pory jądrowe regulują transport.</li>
+    <li>Chromatyna to DNA wraz z białkami; jej organizacja wpływa na dostępność genów.</li>
+    <li>Jąderko uczestniczy w syntezie rRNA i składaniu podjednostek rybosomów.</li>
+    <li>W jądrze zachodzą m.in. replikacja DNA i transkrypcja; translacja odbywa się na rybosomach poza jądrem.</li>
+   </ul>
+  </div>
+ </section>
+ <p class="small">Materiał do celów dydaktycznych. Schemat jest poglądowy i nie zastępuje obserwacji mikroskopowej ani podręcznika akademickiego.</p>
+</main>
+<footer><div class="wrap"><a class="toplink" href="#top" style="color:#fff">↑ Wróć na górę</a><p><strong>Jądro komórkowe — budowa i funkcje</strong></p><p>Samodzielny materiał HTML · działa bez zewnętrznych bibliotek i połączenia z internetem.</p></div></footer>
+<script>
+(function(){
+ const answers={q1:"b",q2:"c",q3:"a",q4:"b",q5:"c"};
+ const form=document.getElementById("quizForm");
+ const result=document.getElementById("result");
+ form.addEventListener("submit",function(e){
+  e.preventDefault();let score=0,unanswered=0;
+  Object.keys(answers).forEach(function(q){
+   const chosen=form.querySelector('input[name="'+q+'"]:checked');
+   if(!chosen)unanswered++;
+   else if(chosen.value===answers[q])score++;
+  });
+  result.className=score===5?"correct":"incorrect";
+  result.textContent="Wynik: "+score+" / 5."+(unanswered?" Nie udzielono odpowiedzi na "+unanswered+" pyt.":"")+(score===5?" Świetnie!":" Przejrzyj odpowiedzi i spróbuj ponownie.");
+ });
+ document.getElementById("resetBtn").addEventListener("click",function(){form.reset();result.textContent="";result.className="";});
+})();
+</script>
+</body>
+</html>
